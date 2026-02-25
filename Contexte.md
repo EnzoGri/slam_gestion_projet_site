@@ -1,5 +1,3 @@
----
-marp: true
 
 **PROJET** 
 
