@@ -10,9 +10,9 @@ NéoCompute est une entreprise créée en 2026 qui aide les PME dans leur transi
 
 ##  Besoins de l’entreprise
 - Une équipe de développeurs qualifiés (front-end, back-end, full-stack)  
-- Des outils de développement performants (IDE, frameworks, outils de versioning)  
+- Des outils de développement performants (IDE, frameworks)  
 - Une infrastructure serveur sécurisée (cloud ou on-premise)  
-- Une bonne gestion de projet (méthodes Agile, suivi des tâches)  
+- Une bonne gestion de projet 
 - Des bases de données fiables et bien structurées  
 - Des procédures de tests et de validation des applications  
 - Une communication claire avec les clients pour comprendre leurs besoins  
