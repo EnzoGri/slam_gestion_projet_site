@@ -1,17 +1,11 @@
 ---
 marp: true
-
-
-<img src="logo.png" alt="NC" width="600"/>
 ---
- 
-##  Objectifs de l’entreprise
-- Développer des solutions logicielles fiables et adaptées aux besoins des clients  
-- Accompagner les entreprises dans leur transformation numérique  
-- Garantir la qualité, la performance et la sécurité des applications développées  
-- Innover en utilisant des technologies modernes et évolutives  
-- Améliorer la productivité et l’efficacité des systèmes d’information clients  
-- Assurer un support technique et une maintenance continue  
+<img src="logo.png" alt="NC" width="300"/>
+
+## Histoire de l'entreprise
+
+NéoCompute, créée en 2026 par des ingénieurs passionnés, a grandi en accompagnant des PME vers la transformation numérique grâce à des solutions sur-mesure, des pratiques Agile et un engagement fort pour la sécurité et l'innovation responsable.
 
 ---
 
@@ -26,14 +20,18 @@ marp: true
 
 ---
 
-##  Fonctionnalités proposées par la société
-- Développement d’applications web et logicielles sur mesure  
-- Création et gestion de bases de données (SQL, relationnelles)  
-- Maintenance et mise à jour des applications existantes  
-- Sécurisation des données et des accès utilisateurs  
-- Intégration de nouvelles fonctionnalités selon les besoins clients  
-- Tests, débogage et optimisation des performances  
-- Support technique et assistance aux utilisateurs  
-- Documentation technique des solutions développées  
+##  Objectifs de l’entreprise
+- Développer des solutions logicielles fiables et adaptées aux besoins des clients  
+- Accompagner les entreprises dans leur transformation numérique  
+- Garantir la qualité, la performance et la sécurité des applications développées  
+- Innover en utilisant des technologies modernes et évolutives  
+- Améliorer la productivité et l’efficacité des systèmes d’information clients  
+- Assurer un support technique et une maintenance continue  
 
 ---
+
+##  Fonctionnalités proposées par la société
+- Sur-mesure
+- Sécurité 
+- Performance 
+- Accompagnement  
