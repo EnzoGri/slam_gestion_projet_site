@@ -21,10 +21,11 @@ NéoCompute, créée en 2026 par des ingénieurs passionnés, a grandi en accomp
 ---
 
 ##  Objectifs de l’entreprise
-- Développer
-- Accompagner
-- La qualité, la performance et la sécurité   
-- Innover en utilisant des technologies modernes et évolutives    
+- Développer des solutions logicielles fiables et adaptées aux besoins des clients  
+- Accompagner les entreprises dans leur transformation numérique  
+- Garantir la qualité, la performance et la sécurité des applications développées  
+- Innover en utilisant des technologies modernes et évolutives  
+- Améliorer la productivité et l’efficacité des systèmes d’information clients  
 - Assurer un support technique et une maintenance continue  
 
 ---
