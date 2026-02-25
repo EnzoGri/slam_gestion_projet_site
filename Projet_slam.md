@@ -4,7 +4,7 @@ marp: true
 
 <img src="logo.png" alt="NC" width="600"/>
 ---
-
+ 
 ##  Objectifs de l’entreprise
 - Développer des solutions logicielles fiables et adaptées aux besoins des clients  
 - Accompagner les entreprises dans leur transformation numérique  
