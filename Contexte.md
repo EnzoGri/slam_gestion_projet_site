@@ -1,15 +1,10 @@
 
 **PROJET** 
 
----
 
-##  Objectifs de l’entreprise
-- Développer des solutions logicielles fiables et adaptées aux besoins des clients  
-- Accompagner les entreprises dans leur transformation numérique  
-- Garantir la qualité, la performance et la sécurité des applications développées  
-- Innover en utilisant des technologies modernes et évolutives  
-- Améliorer la productivité et l’efficacité des systèmes d’information clients  
-- Assurer un support technique et une maintenance continue  
+## Histoire de l'entreprise
+
+NéoCompute est une entreprise créée en 2026 qui aide les PME dans leur transition numérique, en proposant des solutions adaptées à leurs besoins, tout en accordant une grande importance à la sécurité et à l’innovation.
 
 ---
 
@@ -24,6 +19,16 @@
 
 ---
 
+##  Objectifs de l’entreprise
+- Développer des solutions logicielles fiables et adaptées aux besoins des clients  
+- Accompagner les entreprises dans leur transformation numérique  
+- Garantir la qualité, la performance et la sécurité des applications développées  
+- Innover en utilisant des technologies modernes et évolutives  
+- Améliorer la productivité et l’efficacité des systèmes d’information clients  
+- Assurer un support technique et une maintenance continue  
+
+---
+
 ##  Fonctionnalités proposées par la société
 - Développement d’applications web et logicielles sur mesure  
 - Création et gestion de bases de données (SQL, relationnelles)  
@@ -33,11 +38,4 @@
 - Tests, débogage et optimisation des performances  
 - Support technique et assistance aux utilisateurs  
 - Documentation technique des solutions développées  
- 
----
-
-## Histoire de l'entreprise
-
-NéoCompute est une entreprise créée en 2026 qui aide les PME dans leur transition numérique, en proposant des solutions adaptées à leurs besoins, tout en accordant une grande importance à la sécurité et à l’innovation.
-
 ---
