@@ -1,6 +1,8 @@
+---
+marp: true
+
 **PROJET** 
 ## Société de développement : NéoCompute
-
 
 ---
 
