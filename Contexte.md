@@ -25,10 +25,10 @@ NéoCompute est une entreprise créée en 2026 qui aide les PME dans leur transi
 - Garantir la qualité, la performance et la sécurité des applications développées  
 - Innover en utilisant des technologies modernes et évolutives  
 - Améliorer la productivité et l’efficacité des systèmes d’information clients  
-- Assurer un support technique et une maintenance continue  
+- Assurer un support technique et une maintenance continue 
+ 
 
 ---
-
 ##  Fonctionnalités proposées par la société
 - Développement d’applications web et logicielles sur mesure  
 - Création et gestion de bases de données (SQL, relationnelles)  
