@@ -5,7 +5,7 @@ marp: true
 
 ## Histoire de l'entreprise
 
-NéoCompute, créée en 2026 par des ingénieurs passionnés, a grandi en accompagnant des PME vers la transformation numérique grâce à des solutions sur-mesure, des pratiques Agile et un engagement fort pour la sécurité et l'innovation responsable.
+NéoCompute, créée en 2026 par des ingénieurs passionnés, a grandi en accompagnant des PME vers la transformation numérique grâce à des solutions sur-mesure, des pratiques agile et un engagement fort pour la sécurité et l'innovation responsable.
 
 ---
 
