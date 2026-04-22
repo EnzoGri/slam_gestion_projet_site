@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>NéoCompute - Innovate. Connect. Future</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#004ced",
+                        "secondary": "#a33800",
+                        "tertiary": "#620bd3",
+                        "surface": "#faf8ff"
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>  
+  <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .cookie-banner { display: none; }
+        .cookie-banner.active { display: flex; }
+    </style>
+<body class="bg-white text-[#131b2e] antialiased">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a class="text-2xl font-black tracking-tighter text-blue-600" href="#">NÉOCOMPUTE</a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="font-semibold text-slate-600 hover:text-blue-600" href="#histoire">Histoire</a>
+            <a class="font-semibold text-slate-600 hover:text-blue-600" href="#solutions">Solutions</a>
+            <a class="font-semibold text-slate-600 hover:text-blue-600" href="#equipe">L'Équipe</a>
+            <a class="font-semibold text-slate-600 hover:text-blue-600" href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all">Démarrer</a>
+    </div>
+</nav>
+
+<main class="pt-24">
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                L'innovation <br/>
+                <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">au service des PME.</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-8">NéoCompute accompagne votre transition numérique avec des solutions sur-mesure et une sécurité sans compromis.</p>
+            <div class="flex gap-4">
+                <a href="#solutions" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-blue-700 transition-all">Nos Solutions</a>
+            </div>
+        </div>
+        <div class="flex-1">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-2xl border border-slate-100" alt="Sécurité Informatique">
+        </div>
+    </section>
+
+    <!-- Histoire -->
+    <section id="histoire" class="bg-slate-50 py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Notre Histoire</h2>
+            <p class="text-slate-600 text-lg leading-relaxed">
+                Créée en 2026 par des ingénieurs passionnés, NéoCompute a grandi en accompagnant des PME vers la transformation numérique grâce à des solutions sur-mesure, des pratiques Agile et un engagement fort pour la sécurité et l'innovation responsable.
+            </p>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="py-24 max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Nos Fonctionnalités Proposées</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition-all">
+                <span class="material-symbols-outlined text-blue-600 text-4xl mb-4">settings_suggest</span>
+                <h3 class="font-bold text-xl mb-2">Sur-mesure</h3>
+                <p class="text-slate-500 text-sm">Développement d'applications web et logicielles adaptées à vos besoins.</p>
+            </div>
+            <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition-all">
+                <span class="material-symbols-outlined text-blue-600 text-4xl mb-4">shield</span>
+                <h3 class="font-bold text-xl mb-2">Sécurité</h3>
+                <p class="text-slate-500 text-sm">Sécurisation des données et des accès utilisateurs.</p>
+            </div>
+            <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition-all">
+                <span class="material-symbols-outlined text-blue-600 text-4xl mb-4">speed</span>
+                <h3 class="font-bold text-xl mb-2">Performance</h3>
+                <p class="text-slate-500 text-sm">Optimisation des performances et tests rigoureux.</p>
+            </div>
+            <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition-all">
+                <span class="material-symbols-outlined text-blue-600 text-4xl mb-4">support_agent</span>
+                <h3 class="font-bold text-xl mb-2">Accompagnement</h3>
+                <p class="text-slate-500 text-sm">Support technique et maintenance continue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipe -->
+    <section id="equipe" class="bg-slate-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">L'Expertise Humaine</h2>
+            <p class="text-slate-400 mb-12">Trois développeurs passionnés à votre service.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <div class="w-32 h-32 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-4xl">person</span>
+                    </div>
+                    <h4 class="font-bold">Enzo .G</h4>
+                    <p class="text-blue-400">Back-end Expert</p>
+                </div>
+                <div>
+                    <div class="w-32 h-32 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-4xl">person_4</span>
+                    </div>
+                    <h4 class="font-bold">Camille .S</h4>
+                    <p class="text-purple-400">UI/UX & Front-end</p>
+                </div>
+                <div>
+                    <div class="w-32 h-32 bg-orange-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-4xl">person</span>
+                    </div>
+                    <h4 class="font-bold">Mathis 0</h4>
+                    <p class="text-orange-400">Full-stack Dev</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">Prêt à transformer votre entreprise ?</h2>
+        <form class="flex flex-col gap-4">
+            <input type="text" placeholder="Votre Nom" class="p-4 rounded-xl border border-slate-200">
+            <input type="email" placeholder="Votre Email" class="p-4 rounded-xl border border-slate-200">
+            <textarea placeholder="Votre Projet" class="p-4 rounded-xl border border-slate-200 h-32"></textarea>
+            <button class="bg-blue-600 text-white p-4 rounded-xl font-bold">Envoyer la demande</button>
+        </form>
+    </section>
+</main>
+
+<footer class="bg-white border-t border-slate-100 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-slate-500 text-sm">© 2026 NÉOCOMPUTE. Innovate. Connect. Future.</div>
+        <div class="flex gap-8">
+            <a href="mentionslegale.html" class="text-sm font-semibold text-slate-600 hover:text-blue-600">Mentions Légales</a>
+            <a href="#" class="text-sm font-semibold text-slate-600 hover:text-blue-600">Confidentialité</a>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
