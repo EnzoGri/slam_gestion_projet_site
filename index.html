@@ -208,6 +208,26 @@
     formspree('initForm', { formElement: '#my-form', formId: 'xojyggky' });
 </script>
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+<!-- Cookie Banner -->
+<div class="cookie-banner active fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-100 p-6 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 w-full">
+        <p class="text-sm text-slate-600">Ce site utilise des cookies pour améliorer votre expérience. En acceptant, vous consentez à leur utilisation. Vous pouvez choisir de les refuser.</p>
+        <div class="flex gap-3">
+            <button id="refuse-cookies" class="px-6 py-2.5 rounded-full font-semibold border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all">Refuser</button>
+            <button id="accept-cookies" class="px-6 py-2.5 rounded-full font-semibold bg-blue-600 text-white hover:bg-blue-700 transition-all">Accepter</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('accept-cookies').addEventListener('click', () => {
+        document.querySelector('.cookie-banner').classList.remove('active');
+    });
+    document.getElementById('refuse-cookies').addEventListener('click', () => {
+        document.querySelector('.cookie-banner').classList.remove('active');
+    });
+</script>
+
 
 </body>
 </html>
