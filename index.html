@@ -26,6 +26,66 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .cookie-banner { display: none; }
         .cookie-banner.active { display: flex; }
+
+        /* Reader Mode */
+        #reader-toggle {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            z-index: 100;
+            width: 48px;
+            height: 48px;
+            border-radius: 999px;
+            background: #004ced;
+            color: #fff;
+            border: none;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0,76,237,.3);
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #reader-toggle:hover { background: #0035b3; transform: scale(1.05); }
+        #reader-toggle.active { background: #131b2e; }
+        body.reader-mode nav,
+        body.reader-mode footer,
+        body.reader-mode .cookie-banner,
+        body.reader-mode form,
+        body.reader-mode [data-fs-success],
+        body.reader-mode [data-fs-error],
+        body.reader-mode #reader-toggle:not(.active) { display: none !important; }
+        body.reader-mode #reader-toggle.active { display: flex !important; }
+        body.reader-mode .max-w-7xl,
+        body.reader-mode .max-w-4xl,
+        body.reader-mode .max-w-3xl { max-width: 720px !important; }
+        body.reader-mode main { padding-top: 0 !important; }
+        body.reader-mode section { background: transparent !important; color: #131b2e !important; }
+        body.reader-mode section#equipe { background: transparent !important; color: #131b2e !important; }
+        body.reader-mode section#equipe .text-slate-400 { color: #64748b !important; }
+        body.reader-mode section#equipe h3 { color: #131b2e !important; }
+        body.reader-mode section#equipe p { color: #64748b !important; }
+        body.reader-mode img { display: none !important; }
+        body.reader-mode .grid { display: block !important; }
+        body.reader-mode .grid > div {
+            border: none !important;
+            box-shadow: none !important;
+            padding: 1rem 0 !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+            border-radius: 0 !important;
+        }
+        body.reader-mode .grid > div:last-child { border-bottom: none !important; }
+        body.reader-mode .flex.gap-4 a { display: none !important; }
+        body.reader-mode .material-symbols-outlined { display: none !important; }
+        body.reader-mode h1, body.reader-mode h2 { text-align: left !important; }
+        body.reader-mode h1 { font-size: 2rem !important; }
+        body.reader-mode h2 { font-size: 1.5rem !important; }
+        body.reader-mode p, body.reader-mode li { font-size: 1.125rem !important; line-height: 1.8 !important; }
+        body.reader-mode .w-32.h-32 { display: none !important; }
+        body.reader-mode section { padding: 2rem 0 !important; }
+        body.reader-mode .bg-slate-50 { background: transparent !important; }
     </style>
 </head>  
 <body class="bg-white text-[#131b2e] antialiased">
@@ -210,6 +270,8 @@
     formspree('initForm', { formElement: '#my-form', formId: 'xojyggky' });
 </script>
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+<button id="reader-toggle" aria-label="Mode lecture">Aa</button>
+
 <!-- Cookie Banner -->
 <div class="cookie-banner active fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-100 p-6 shadow-2xl">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 w-full">
@@ -227,6 +289,14 @@
     });
     document.getElementById('refuse-cookies').addEventListener('click', () => {
         document.querySelector('.cookie-banner').classList.remove('active');
+    });
+
+    // Reader Mode
+    const readerBtn = document.getElementById('reader-toggle');
+    readerBtn.addEventListener('click', () => {
+        document.body.classList.toggle('reader-mode');
+        readerBtn.classList.toggle('active');
+        readerBtn.textContent = document.body.classList.contains('reader-mode') ? '×' : 'Aa';
     });
 </script>
 
