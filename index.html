@@ -27,9 +27,18 @@
         }
     </script>
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .cookie-banner { display: none; }
-        .cookie-banner.active { display: flex; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .cookie-banner {
+            display: none;
+        }
+
+        .cookie-banner.active {
+            display: flex;
+        }
 
         /* Reader Mode */
         #reader-toggle {
@@ -46,74 +55,158 @@
             font-size: 1.25rem;
             font-weight: 700;
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0,76,237,.3);
+            box-shadow: 0 4px 20px rgba(0, 76, 237, .3);
             transition: all .2s;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        #reader-toggle:hover { background: #0035b3; transform: scale(1.05); }
-        #reader-toggle.active { background: #131b2e; }
+
+        #reader-toggle:hover {
+            background: #0035b3;
+            transform: scale(1.05);
+        }
+
+        #reader-toggle.active {
+            background: #131b2e;
+        }
+
         body.reader-mode nav,
         body.reader-mode footer,
         body.reader-mode .cookie-banner,
         body.reader-mode form,
         body.reader-mode [data-fs-success],
         body.reader-mode [data-fs-error],
-        body.reader-mode #reader-toggle:not(.active) { display: none !important; }
-        body.reader-mode #reader-toggle.active { display: flex !important; }
+        body.reader-mode #reader-toggle:not(.active) {
+            display: none !important;
+        }
+
+        body.reader-mode #reader-toggle.active {
+            display: flex !important;
+        }
+
         body.reader-mode .max-w-7xl,
         body.reader-mode .max-w-4xl,
-        body.reader-mode .max-w-3xl { max-width: 720px !important; }
-        body.reader-mode main { padding-top: 0 !important; }
-        body.reader-mode section { background: transparent !important; color: #131b2e !important; }
-        body.reader-mode section#equipe { background: transparent !important; color: #131b2e !important; }
-        body.reader-mode section#equipe .text-slate-400 { color: #64748b !important; }
-        body.reader-mode section#equipe h3 { color: #131b2e !important; }
-        body.reader-mode section#equipe p { color: #64748b !important; }
-        body.reader-mode img { display: none !important; }
-        body.reader-mode .grid { display: block !important; }
-        body.reader-mode .grid > div {
+        body.reader-mode .max-w-3xl {
+            max-width: 720px !important;
+        }
+
+        body.reader-mode main {
+            padding-top: 0 !important;
+        }
+
+        body.reader-mode section {
+            background: transparent !important;
+            color: #131b2e !important;
+        }
+
+        body.reader-mode section#equipe {
+            background: transparent !important;
+            color: #131b2e !important;
+        }
+
+        body.reader-mode section#equipe .text-slate-400 {
+            color: #64748b !important;
+        }
+
+        body.reader-mode section#equipe h3 {
+            color: #131b2e !important;
+        }
+
+        body.reader-mode section#equipe p {
+            color: #64748b !important;
+        }
+
+        body.reader-mode img {
+            display: none !important;
+        }
+
+        body.reader-mode .grid {
+            display: block !important;
+        }
+
+        body.reader-mode .grid>div {
             border: none !important;
             box-shadow: none !important;
             padding: 1rem 0 !important;
             border-bottom: 1px solid #e2e8f0 !important;
             border-radius: 0 !important;
         }
-        body.reader-mode .grid > div:last-child { border-bottom: none !important; }
-        body.reader-mode .flex.gap-4 a { display: none !important; }
-        body.reader-mode .material-symbols-outlined { display: none !important; }
-        body.reader-mode h1, body.reader-mode h2 { text-align: left !important; }
-        body.reader-mode h1 { font-size: 2rem !important; }
-        body.reader-mode h2 { font-size: 1.5rem !important; }
-        body.reader-mode p, body.reader-mode li { font-size: 1.125rem !important; line-height: 1.8 !important; }
-        body.reader-mode .w-32.h-32 { display: none !important; }
-        body.reader-mode section { padding: 2rem 0 !important; }
-        body.reader-mode .bg-slate-50 { background: transparent !important; }
+
+        body.reader-mode .grid>div:last-child {
+            border-bottom: none !important;
+        }
+
+        body.reader-mode .flex.gap-4 a {
+            display: none !important;
+        }
+
+        body.reader-mode .material-symbols-outlined {
+            display: none !important;
+        }
+
+        body.reader-mode h1,
+        body.reader-mode h2 {
+            text-align: left !important;
+        }
+
+        body.reader-mode h1 {
+            font-size: 2rem !important;
+        }
+
+        body.reader-mode h2 {
+            font-size: 1.5rem !important;
+        }
+
+        body.reader-mode p,
+        body.reader-mode li {
+            font-size: 1.125rem !important;
+            line-height: 1.8 !important;
+        }
+
+        body.reader-mode .w-32.h-32 {
+            display: none !important;
+        }
+
+        body.reader-mode section {
+            padding: 2rem 0 !important;
+        }
+
+        body.reader-mode .bg-slate-50 {
+            background: transparent !important;
+        }
     </style>
 </head>
 
 <body class="bg-white text-[#131b2e] antialiased">
-<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a class="text-2xl font-black tracking-tighter text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1" href="#">NÉOCOMPUTE</a>
-        
-        <div class="hidden md:flex items-center gap-8">
-            <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1" href="#histoire">Histoire</a>
-            <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1" href="#solutions">Solutions</a>
-            <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1" href="#equipe">L'Équipe</a>
-            <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1" href="#contact">Contact</a>
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a class="text-2xl font-black tracking-tighter text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1"
+                href="#">NÉOCOMPUTE</a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1"
+                    href="#histoire">Histoire</a>
+                <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1"
+                    href="#solutions">Solutions</a>
+                <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1"
+                    href="#equipe">L'Équipe</a>
+                <a class="font-semibold text-slate-600 hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1"
+                    href="#contact">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="en/index.html"
+                    class="flex items-center gap-1 text-sm font-bold text-slate-500 hover:text-blue-600 transition-colors focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1"
+                    title="Switch to English">
+                    <span class="material-symbols-outlined text-base">language</span>
+                    EN
+                </a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all focus:outline-none focus:ring-4 focus:ring-blue-300">Démarrer</a>
+            </div>
         </div>
-        
-        <div class="flex items-center gap-4">
-            <a href="en/index.html" class="flex items-center gap-1 text-sm font-bold text-slate-500 hover:text-blue-600 transition-colors focus:outline-none focus:ring-4 focus:ring-blue-200 rounded-lg p-1" title="Switch to English">
-                <span class="material-symbols-outlined text-base">language</span>
-                EN
-            </a>
-            <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all focus:outline-none focus:ring-4 focus:ring-blue-300">Démarrer</a>
-        </div>
-    </div>
-</nav>
+    </nav>
 
     <main class="pt-24">
         <section class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
@@ -135,7 +228,7 @@
             </div>
             <div class="flex-1">
                 <figure class="w-full"></figure>
-                <img src="imageslam.avif" class="rounded-3xl shadow-2xl border border-slate-100" alt="" tabindex="0">
+                <img src="imageslam.webp" class="rounded-3xl shadow-2xl border border-slate-100" alt="" tabindex="0">
                 <figcaption class="mt-4 text-sm text-slate-500 italic text-center">
                     Représentation de l'infrastructure sécurisée développée par NéoCompute pour la protection de
                     vos données.
@@ -349,24 +442,24 @@
         </div>
     </div>
 
-<button id="reader-toggle" aria-label="Mode lecture">Aa</button>
+    <button id="reader-toggle" aria-label="Mode lecture">Aa</button>
 
-<script>
-    document.getElementById('accept-cookies').addEventListener('click', () => {
-        document.querySelectorAll('.cookie-banner').forEach(b => b.classList.remove('active'));
-    });
-    document.getElementById('refuse-cookies').addEventListener('click', () => {
-        document.querySelectorAll('.cookie-banner').forEach(b => b.classList.remove('active'));
-    });
+    <script>
+        document.getElementById('accept-cookies').addEventListener('click', () => {
+            document.querySelectorAll('.cookie-banner').forEach(b => b.classList.remove('active'));
+        });
+        document.getElementById('refuse-cookies').addEventListener('click', () => {
+            document.querySelectorAll('.cookie-banner').forEach(b => b.classList.remove('active'));
+        });
 
-    // Reader Mode
-    const readerBtn = document.getElementById('reader-toggle');
-    readerBtn.addEventListener('click', () => {
-        document.body.classList.toggle('reader-mode');
-        readerBtn.classList.toggle('active');
-        readerBtn.textContent = document.body.classList.contains('reader-mode') ? '×' : 'Aa';
-    });
-</script>
+        // Reader Mode
+        const readerBtn = document.getElementById('reader-toggle');
+        readerBtn.addEventListener('click', () => {
+            document.body.classList.toggle('reader-mode');
+            readerBtn.classList.toggle('active');
+            readerBtn.textContent = document.body.classList.contains('reader-mode') ? '×' : 'Aa';
+        });
+    </script>
 
 
 </body>
