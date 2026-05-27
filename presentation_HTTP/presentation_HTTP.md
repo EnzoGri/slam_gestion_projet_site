@@ -75,4 +75,29 @@ Il est important de respecter la sémantique des verbes lors du développement (
 | **POST** | Create | Non | Non |
 | **PUT** | Update (Total) | Non | **Oui** |
 | **PATCH** | Update (Partiel) | Non | Non |
-| **DELETE** | Delete | Non
+| **DELETE** | Delete | Non | **Oui**
+
+---
+
+## 5. Les 5 Catégories de Codes HTTP
+
+Le serveur utilise un code à trois chiffres pour formaliser sa réponse. Le premier chiffre permet de classer immédiatement le résultat :
+
+* **`1xx` (Informations)** : Requête reçue, le serveur poursuit le traitement (ex: `101 Switching Protocols`).
+* **`2xx` (Succès)** : L'action a été reçue, comprise et acceptée avec succès (ex: `200 OK`, `201 Created`).
+* **`3xx` (Redirection)** : Le client doit accomplir une action supplémentaire pour finaliser la requête (ex: `301 Moved Permanently`, `304 Not Modified`).
+* **`4xx` (Erreur du Client)** : La requête contient une mauvaise syntaxe ou ne peut pas être traitée (ex: `400 Bad Request`, `401 Unauthorized`, `404 Not Found`).
+* **`5xx` (Erreur du Serveur)** : Le serveur a rencontré un problème interne et a échoué à traiter une requête pourtant valide (ex: `500 Internal Server Error`, `502 Bad Gateway`).
+
+---
+
+## 6. L'Anatomie d'un Message HTTP
+
+Qu'il s'agisse d'une requête ou d'une réponse, la structure d'un message reste identique et suit un ordre strict :
+
+1. **La ligne de départ** :
+   * *Pour une requête* : Spécifie la méthode, l'URL cible et la version du protocole (ex: `GET /api/users HTTP/1.1`).
+   * *Pour une réponse* : Spécifie la version du protocole, le code de statut et son libellé (ex: `HTTP/1.1 200 OK`).
+2. **Les En-têtes (Headers)** : Des lignes de métadonnées sous la forme `Clé: Valeur` (ex: `Content-Type: application/json`, `Authorization: Bearer <token>`).
+3. **Une ligne vide** : Un séparateur technique obligatoire qui indique au parseur la fin des métadonnées.
+4. **Le Corps (Body)** : Les données brutes (JSON, HTML, fichier). Il est optionnel pour certaines requêtes comme `GET`.
