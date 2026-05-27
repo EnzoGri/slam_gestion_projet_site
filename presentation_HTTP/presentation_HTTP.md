@@ -29,10 +29,7 @@ style: |
 ---
 
 # Le Protocole HTTP
-## Comprendre les bases de la communication Web
 
-DÉVELOPPEMENT & ARCHITECTURE WEB
-Modifier ces informations de bas de page si nécessaire
 
 ---
 
