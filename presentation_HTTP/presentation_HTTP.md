@@ -27,7 +27,7 @@ style: |
     color: #d63384;
   }
 ---
-  
+
 # Le Protocole HTTP
 
 
@@ -37,7 +37,8 @@ style: |
 
 Le protocole **HTTP** (*HyperText Transfer Protocol*) est le pilier du World Wide Web.
 
-* **Couche Application** : Situé au-dessus de la pile TCP/IP.
+* **Modèle d'OSI** : Appartient à la couche Application.
+* **Protocoles utilisés** : TCP (et TLS pour HTTPS).
 * **Modèle Client-Serveur** : Le client fait une demande, le serveur répond.
 * **Sans état (Stateless)** : Chaque couple Requête/Réponse est indépendant. Le protocole ne se "souvient" pas des requêtes précédentes (utilisation de cookies/tokens pour y remédier).
 
@@ -47,9 +48,9 @@ Le protocole **HTTP** (*HyperText Transfer Protocol*) est le pilier du World Wid
 
 La communication se déroule toujours en trois étapes clés :
 
-1. **Le Client (ex: Navigateur)** initie la connexion et envoie une **Requête HTTP**.
-2. **Le Serveur** reçoit la requête, traite l'information (requête en base de données, logique métier).
-3. **Le Serveur** renvoie une **Réponse HTTP** contenant un code de statut et généralement une ressource (HTML, JSON, Image).
+1. **La Connexion et la Requête** : Le Client (ex: navigateur web, script d'automatisation) établit une connexion TCP avec le serveur et lui envoie une Requête HTTP.
+2. **Le Traitement** : Le Serveur reçoit et interprète la requête, puis exécute la logique métier nécessaire (interrogation d'une base de données, traitement de fichiers, etc.).
+3. **La Réponse** : Le Serveur renvoie une Réponse HTTP contenant un code de statut indiquant le résultat de l'opération, souvent accompagné d'une ressource (HTML, JSON, image, etc.).
 
 ---
 
@@ -75,7 +76,7 @@ Il est important de respecter la sémantique des verbes lors du développement (
 | **POST** | Create | Non | Non |
 | **PUT** | Update (Total) | Non | **Oui** |
 | **PATCH** | Update (Partiel) | Non | Non |
-| **DELETE** | Delete | Non | **Oui**
+| **DELETE** | Delete | Non | **Oui** |
 
 ---
 
